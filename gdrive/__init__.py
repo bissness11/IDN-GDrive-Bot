@@ -1,7 +1,7 @@
 import os
 import sys
 import logging
-import config
+from gdrive import config
 logging.basicConfig(
     level=logging.INFO,
     handlers=[logging.FileHandler('log.txt'), logging.StreamHandler()],
