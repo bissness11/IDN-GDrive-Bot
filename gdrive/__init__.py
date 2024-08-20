@@ -23,6 +23,19 @@ try:
     DOWNLOAD_DIRECTORY = os.environ.get("DOWNLOAD_DIRECTORY", "./downloads/")
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID")
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET")
+  else:
+    from gdrive.config import config
+    BOT_TOKEN = config.BOT_TOKEN
+    APP_ID = config.APP_ID
+    API_HASH = config.API_HASH
+    DATABASE_URL = config.DATABASE_URL
+    SUDO_USERS = config.SUDO_USERS
+    SUPPORT_CHAT_LINK = config.SUPPORT_CHAT_LINK
+    DOWNLOAD_DIRECTORY = config.DOWNLOAD_DIRECTORY
+    G_DRIVE_CLIENT_ID = config.G_DRIVE_CLIENT_ID
+    G_DRIVE_CLIENT_SECRET = config.G_DRIVE_CLIENT_SECRET
+  SUDO_USERS = list({int(x) for x in SUDO_USERS.split()})
+  SUDO_USERS = list(set(SUDO_USERS))
 except KeyError:
   LOGGER.error('One or more configuration values are missing exiting now.')
   sys.exit(1)
