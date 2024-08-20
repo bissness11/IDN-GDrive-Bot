@@ -1,13 +1,13 @@
 class config:
-    BOT_TOKEN = "5502855202:AAGW3MYUov5Gb2wWgpcaNTgxDjZ98IFh4P8"
+    BOT_TOKEN = ""
     APP_ID = "6534707"
     API_HASH = "4bcc61d959a9f403b2f20149cbbe627a"
     DATABASE_URL = "postgres://dgdxlptb:uP0wjJhot4kqWrwXg8ENLEFAuEd2yk4d@mouse.db.elephantsql.com/dgdxlptb"
     SUDO_USERS = "1430593323 1430593325" # Separated by space.
     SUPPORT_CHAT_LINK = "-1001714109958"
     DOWNLOAD_DIRECTORY = "./downloads/"
-    G_DRIVE_CLIENT_ID = "161719911468-5jtb7bsug2reg42nts4vmpah5r2l95e1.apps.googleusercontent.com "
-    G_DRIVE_CLIENT_SECRET = "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"
+    G_DRIVE_CLIENT_ID = "161719911468-5jtb7bsug2regfff42nts4vmpah5r2l95e1.apps.googleusercontent.com "
+    G_DRIVE_CLIENT_SECRET = "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40N"
 
 
 class BotCommands:
